@@ -1,0 +1,30 @@
+@startuml
+start
+
+if (gameOver) then (false)
+  if (Phaser.Input.Keyboard.JustDown(R)) then (true)
+    :Call restartScene();
+  else (false)
+  endif
+
+  if (Phaser.Input.Keyboard.JustDown(X)) then (true)
+    :Go to "Splash" scene;
+    stop
+  else (false)  
+  endif
+   
+  :Run inputSystem(world);
+  :Run movementSystem(world);
+  :Run spriteSystem(world);
+  :Run gameOverSystem(world);
+
+else (true)
+  if (finishing) then (false)
+    :Set finishing to true;
+    :Call finishScene();
+  else (true)
+  endif
+endif
+
+stop
+@enduml

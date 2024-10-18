@@ -1,0 +1,19 @@
+@startuml
+start
+partition "Game.addMap()" {
+:Create game background;
+:Create board background;
+:Create exit entity;
+note
+get coordinate 
+from loaded levelData
+endnote
+:Create player entity;
+
+note
+get coordinate 
+from loaded levelData
+endnote
+}
+stop
+@enduml

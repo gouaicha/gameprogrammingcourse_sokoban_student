@@ -1,0 +1,18 @@
+@startuml
+start
+:Run spriteQuery(world);
+note
+Looking for **Position**
+and **Player** components
+endnote 
+if (entities[0] exists?) then (yes)
+  :Get player coordinates;
+  :Get exit door coordinates;
+  
+  if (is player on exit?) then (yes)
+    :Set scene.gameOver to true;
+  endif  
+endif
+:return world;
+stop
+@enduml
