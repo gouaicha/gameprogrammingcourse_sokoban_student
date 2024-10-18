@@ -1,0 +1,68 @@
+{
+    "stage": {
+      "level": 0,
+      "grid": {
+        "width": 7,
+        "height": 7
+      },
+      "exit": {
+        "x": 3,
+        "y": 3
+      },
+      "blocks": [
+        {
+          "id": 1,
+          "position": { "x": 2, "y": 1 }
+        },
+        {
+          "id": 2,
+          "position": { "x": 4, "y": 1 }
+        },
+        {
+          "id": 3,
+          "position": { "x": 1, "y": 2 }
+        },
+        {
+          "id": 4,
+          "position": { "x": 3, "y": 2 }
+        },
+        {
+          "id": 5,
+          "position": { "x": 5, "y": 2 }
+        },
+        {
+          "id": 6,
+          "position": { "x": 2, "y": 3 }
+        },
+        {
+          "id": 1,
+          "position": { "x": 4, "y": 3 }
+        },
+        {
+          "id": 2,
+          "position": { "x": 1, "y": 4 }
+        },
+        {
+          "id": 3,
+          "position": { "x": 3, "y": 4 }
+        },
+        {
+          "id": 4,
+          "position": { "x": 5, "y": 4 }
+        },
+        {
+          "id": 5,
+          "position": { "x": 2, "y": 5 }
+        },
+        {
+          "id": 6,
+          "position": { "x": 4, "y": 5 }
+        }
+        
+      ]
+    },
+    "player": {
+      "position": { "x": 0, "y": 0 }
+    }
+  }
+  
