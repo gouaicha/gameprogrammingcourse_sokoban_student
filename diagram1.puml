@@ -1,0 +1,8 @@
+@startuml
+[*] --> Bootloader
+Bootloader --> Splash :all assets loaded
+Splash --> Transition :Start button
+Transition --> Game :timeout
+Game --> Credit : X key
+Credit --> Splash : X key
+@enduml
