@@ -1,7 +1,3 @@
-Here is the translation of the provided text into English:
-
----
-
 # Lab: Creating a game with **Phaser** and **BiteCS** based on the **ECS** approach
 
 ## Learning Objectives
