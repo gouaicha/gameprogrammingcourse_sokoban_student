@@ -14,7 +14,7 @@ export class Bootloader extends Phaser.Scene
         this.setLoadEvents();
         //
         //The actual loading
-        this.load.setPath("../assets");
+        this.load.setPath("../gameprogrammingcourse_sokoban_student/assets");
         this.loadFonts();
         this.loadImages();
         //NEW
