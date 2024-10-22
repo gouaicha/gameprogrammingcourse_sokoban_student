@@ -20,9 +20,10 @@ We are going to create an incomplete prototype of our game. This prototype will 
 
 #### Components
 
-1. **Input**
+1. **Input** 
 
 <details>
+    <summary>Code exemple</summary>
 <code>
 export const Input = defineComponent({ direction: Types.i8 });
 </code>
