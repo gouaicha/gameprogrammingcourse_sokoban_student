@@ -10,6 +10,8 @@ The game you will create is a **Sokoban-like** game. The objective is to push bl
 - You can only **push** blocks.
 - A block can only be moved if the space in front of it is empty.
 
+<iframe src="https://www.example.com](https://gouaicha.github.io/gameprogrammingcourse_sokoban_student/" width="100%" height="500"></iframe>
+
 ## Project Structure
 
 The project is organized into **4 stages**, each representing a different phase of the game’s development. Each stage must be completed in sequence, and every stage improves upon the previous version of the project.
