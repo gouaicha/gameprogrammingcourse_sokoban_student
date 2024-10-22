@@ -1,9 +1,3 @@
-# gameprogrammingcourse_step1_student
----
-header-includes:
-    - \usepackage{tikz}
----
-
 # TP Step 4: Game Prototype 2
 
 ## Learning Objectives
