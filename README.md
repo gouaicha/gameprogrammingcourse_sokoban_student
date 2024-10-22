@@ -22,22 +22,28 @@ We are going to create an incomplete prototype of our game. This prototype will 
 
 1. **Input** 
 
+The `Input` component is used to store the direction in which the player wants to move. The direction is represented by a number indicating whether the player is moving up, down, left, or right.
+
 <details>
-    <summary>Code exemple</summary>
+<summary>Code exemple</summary>
 <code>
 export const Input = defineComponent({ direction: Types.i8 });
 </code>
 </details>
 
-The `Input` component is used to store the direction in which the player wants to move. The direction is represented by a number indicating whether the player is moving up, down, left, or right.
 
 2. **Movement**
 
-```javascript
-export const Movement = defineComponent({ direction: Types.i8, dirty: Types.i8 });
-```
 
 The `Movement` component stores the current movement direction and a **dirty** flag (true or false) that indicates whether the movement should be applied during the update cycle.
+
+<details>
+<summary>Code exemple</summary>
+<code>
+export const Movement = defineComponent({ direction: Types.i8, dirty: Types.i8 });
+</code>
+</details>
+
 
 3. **Player**
 
@@ -155,20 +161,24 @@ We keep the same scenes: `Bootloader`, `Splash`, `Transition`, `Game`, and `Cred
 
 The `Input` component is used to capture the player's movement direction.
 
-Code example:
-```javascript
+<details>
+<summary>Hint</summary>
+<code>
 export const Input = defineComponent({ direction: Types.i8 });
-```
+</code>
+</details>
+
 
 2. **Component `Movement`**:
 
 The `Movement` component stores the movement direction and a **dirty** flag to indicate if the movement should be applied.
 
-Code example:
-
-```javascript
+<details>
+<summary>Hint</summary>
+<code>
 export const Movement = defineComponent({ direction: Types.i8, dirty: Types.i8 });
-```
+</code>
+</details>
 
 3. **Component `Player`**:
 
@@ -176,9 +186,13 @@ The `Player` component is a simple marker to identify the entity controlled by t
 
 Code example:
 
-```javascript
+
+<details>
+<summary>Hint</summary>
+<code>
 export const Player = defineComponent();
-```
+</code>
+</details>
 
 ---
 
@@ -188,9 +202,9 @@ export const Player = defineComponent();
 
 The `exit` entity represents the exit door.
 
-Here is a code suggestion for creating it:
-
-```javascript
+<details>
+<summary>Hint</summary>
+<code>
 const eid = addEntity(this.world);
 addComponent(this.world, Position, eid);
 addComponent(this.world, Sprite, eid);
@@ -198,7 +212,8 @@ Position.x[eid] = x;
 Position.y[eid] = y;
 Sprite.texture[eid] = 1;  // Door texture
 return eid;
-```
+</code>
+</details>
 
 Modify the file `entities/exit.js` to create entities of this type. 
 Notice that we are using the Factory design pattern here.
@@ -207,9 +222,12 @@ Notice that we are using the Factory design pattern here.
 
 The `player` entity represents the player's avatar in the game.
 
+<details>
+<summary>Hint</summary>
+
 Here is a suggestion for creating it:
 
-```javascript
+<code>
 const eid = addEntity(this.world);
 addComponent(this.world, Input, eid);
 addComponent(this.world, Position, eid);
@@ -220,7 +238,8 @@ Position.x[eid] = x;
 Position.y[eid] = y;
 Sprite.texture[eid] = 0;  // Player texture
 return eid;
-```
+</code>
+</details>
 
 Modify the file `entities/player.js` to create entities of this type. 
 Notice that we are using the Factory design pattern here.
@@ -241,11 +260,12 @@ This function is executed every update cycle and must perform the following acti
 
 The functionality of the `Game.update()` function is detailed in _Diagram 1_.
 
-**Code Example**:
+<details>
+<summary>Hint</summary>
 
-Here is a code suggestion to help you implement this function:
+Here is a suggestion for creating it:
 
-```javascript
+<code>
 update(t, dt) {
     if (!this.gameOver) {
         if (Phaser.Input.Keyboard.JustDown(this.R)) {
@@ -265,7 +285,8 @@ update(t, dt) {
         }
     }
 }
-```
+</code>
+</details>
 
 ---
 
@@ -300,10 +321,7 @@ Here is a detailed description of how the `gameOver` system works (see _Diagram 
 
 ### Understanding the Movement System
 
-- Check the file **`movementSystem.js`
-
-** to understand how the movement system works.
-
+- Check the file **`movementSystem.js` to understand how the movement system works.
 - Try to understand how movements are applied to entities and how the system manages position updates.
 
 ---
