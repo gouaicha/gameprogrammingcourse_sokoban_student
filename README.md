@@ -1,4 +1,4 @@
-# TP Step 4: Game Prototype 2
+# Lab Step 4: Game Prototype 2
 
 ## Learning Objectives
 - Understand the concept of challenge in a game
