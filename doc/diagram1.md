@@ -15,6 +15,6 @@ header-includes:
     % Flèche indiquant le mouvement
     \draw[->,thick] (0.5, 0.5) -- (1.5, 0.5);
     % Légende
-    \node at (5.5, 0.5) {Case libre};
+    \node at (5.5, 0.5) {Free cell};
 \end{tikzpicture}
 ```
