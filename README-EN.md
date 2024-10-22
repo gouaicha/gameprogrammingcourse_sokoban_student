@@ -1,4 +1,3 @@
-# gameprogrammingcourse_step1_student
 # Lab: Game Prototype 1
 
 ## Learning Objectives
