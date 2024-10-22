@@ -1,0 +1,46 @@
+<!doctype html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8" />
+    <title>First Game with Phaser - Step 1 Configuration </title>
+    <script src="//cdn.jsdelivr.net/npm/phaser@3.85.0/dist/phaser.js"></script>
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<script type="text/javascript">
+
+    var config = {
+        type: Phaser.AUTO,
+        width: 800,
+        height: 600,
+        scene: {
+            preload: preload,
+            create: create,
+            update: update
+        }
+    };
+
+    var game = new Phaser.Game(config);
+
+    function preload ()
+    {
+    }
+
+    function create ()
+    {
+        this.cameras.main.setBackgroundColor('#3498db'); 
+    }
+
+    function update ()
+    {
+    }
+
+</script>
+
+</body>
+</html>
