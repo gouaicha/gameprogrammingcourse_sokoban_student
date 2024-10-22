@@ -23,9 +23,9 @@ We are going to create an incomplete prototype of our game. This prototype will 
 1. **Input**
 
 <details>
-```javascript
+<code>
 export const Input = defineComponent({ direction: Types.i8 });
-```
+</code>
 </details>
 
 The `Input` component is used to store the direction in which the player wants to move. The direction is represented by a number indicating whether the player is moving up, down, left, or right.
